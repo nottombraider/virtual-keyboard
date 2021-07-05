@@ -1,5 +1,7 @@
 const Header = () => {
-  const titleContent = 'MacOS Keyboard &#63743;';
+  const appleSymbol = '&#63743;';
+  const isMacOs = navigator.appVersion.includes('Macintosh');
+  const titleContent = `MacOS Keyboard ${isMacOs ? appleSymbol : ''}`;
   const header = document.createElement('header');
   const titleH1 = document.createElement('h1');
 
