@@ -37,7 +37,7 @@ class KeyboardButton {
 
   clickHandler(callBack) {
     this.ref.addEventListener('click', (event) => {
-      callBack(this.char, { ...event, code: this.code }, 'click');
+      callBack({ ...event, code: this.code }, 'click', this.char);
     });
   }
 }

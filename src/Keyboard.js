@@ -42,12 +42,12 @@ class Keyboard {
         }, 200);
       }
 
-      this.buttonClickHandler(char, event, 'keydown');
+      this.buttonClickHandler(event, 'keydown', char);
     });
 
     document.addEventListener('keyup', (event) => {
       if (event.code === 'CapsLock') {
-        this.buttonClickHandler(undefined, event, 'keyup');
+        this.buttonClickHandler(event, 'keyup');
       }
     });
 
@@ -65,7 +65,7 @@ class Keyboard {
     this.render();
   }
 
-  buttonClickHandler(char = '', event, eventType) {
+  buttonClickHandler(event, eventType, char = '') {
     const { code } = event;
 
     switch (code) {
