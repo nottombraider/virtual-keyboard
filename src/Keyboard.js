@@ -131,7 +131,6 @@ class Keyboard {
   changeLanguage() {
     this.language = this.language === 'en' ? 'ru' : 'en';
 
-    localStorage.removeItem('language');
     localStorage.setItem('language', this.language);
 
     this.keyboardMacOS = this.getKeyboardLanguage();
