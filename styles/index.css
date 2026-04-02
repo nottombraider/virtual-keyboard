@@ -1,0 +1,29 @@
+@import url("./utils.css");
+@import url("./buttons.css");
+
+body {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.app {
+  text-align: center;
+}
+
+.textarea {
+  width: 785px;
+  height: 100px;
+}
+
+.keyboard-container {
+  width: 800px;
+  height: 275px;
+}
+
+.keyboard-row {
+  display: flex;
+}

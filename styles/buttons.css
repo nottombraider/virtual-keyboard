@@ -1,0 +1,124 @@
+.button {
+  height: 40px;
+  min-width: 40px;
+  padding: 4px;
+  background-color: #303033;
+  color: #ecf5f5;
+  font-size: 1.3rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+}
+
+.button:active,
+.button-active {
+  transition: background-color 0.3s, border-radius 0.2s;
+  background-color: #b8860b;
+  border-radius: 15px;
+  text-shadow: 1px 1px 5px #ffffff;
+}
+
+.up-down-button {
+  height: 15px;
+}
+
+.button-special {
+  position: relative;
+  font-size: 1rem;
+  align-items: flex-end;
+}
+
+.backqoute-button {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-button {
+  width: 17rem;
+}
+
+.enter-button {
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 1rem;
+  border-radius: 5px 5px 0;
+}
+
+.enter-button:active {
+  transition: background-color 0.3s, border-radius 0.2s;
+  background-color: #b8860b;
+  border-radius: 15px 15px 0;
+  text-shadow: 1px 1px 5px #ffffff;
+}
+
+.enter-button::after {
+  position: absolute;
+  content: "";
+  width: 31px;
+  height: 55px;
+  border-radius: 0 0 5px 5px;
+  top: 47px;
+  left: 17px;
+  background-color: #303033;
+}
+
+.enter-button:active:after {
+  background-color: #b8860b;
+}
+
+.enter-button-active-after::after {
+  position: absolute;
+  content: "";
+  width: 31px;
+  height: 55px;
+  border-radius: 0 0 5px 5px;
+  top: 47px;
+  left: 17px;
+  background-color: #b8860b;
+}
+
+.capsLock-button::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ecf5f5;
+  top: 8px;
+  left: 10px;
+}
+
+.caps-shift-active::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #26f831;
+  top: 8px;
+  left: 10px;
+}
+
+.button-special-right {
+  justify-content: flex-end;
+}
+
+.button-special-s {
+  width: 4rem;
+}
+
+.button-special-m {
+  width: 5rem;
+}
+
+.button-special-l {
+  width: 6rem;
+}
+
+.button-special-xl {
+  width: 7rem;
+}
+
+.bottom-row-special {
+  align-items: flex-start;
+}
